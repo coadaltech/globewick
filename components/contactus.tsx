@@ -98,7 +98,7 @@ const ContactUs: React.FC = () => {
   ];
 
   return (
-    <section id='contact-us' className="relative bg-gradient-to-b from-[#000d2b] to-[#001f54] py-16 overflow-hidden">
+    <section id='contact-us' className="relative bg-gradient-to-b from-[#000d2b] to-[#001f54] py-8 sm:py-12 md:py-16 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -137,7 +137,7 @@ const ContactUs: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 md:mb-12"
         >
           <motion.span
             initial={{ opacity: 0, scale: 0.9 }}
@@ -158,7 +158,7 @@ const ContactUs: React.FC = () => {
         </motion.div>
 
         {/* Main Content - Fixed Height Container */}
-        <div className="grid lg:grid-cols-2 gap-8 items-start" style={{ minHeight: '600px', maxHeight: '700px' }}>
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 items-start" style={{ minHeight: 'auto', maxHeight: 'none' }}>
           {/* Left Side - Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -167,7 +167,7 @@ const ContactUs: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="space-y-6 h-full flex flex-col justify-center"
           >
-            <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-8 border border-gray-800 h-full flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-4 sm:p-6 md:p-8 border border-gray-800 h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">
                   Contact Information
@@ -248,9 +248,9 @@ const ContactUs: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="h-full"
           >
-            <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-8 border border-gray-800 h-full">
-              <form onSubmit={handleSubmit} className="space-y-5 h-full flex flex-col">
-                <div className="flex-1 space-y-5 overflow-y-auto pr-2" style={{ maxHeight: 'calc(700px - 180px)' }}>
+            <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-2xl p-4 sm:p-6 md:p-8 border border-gray-800 h-full">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 h-full flex flex-col">
+                <div className="flex-1 space-y-4 sm:space-y-5 overflow-y-auto pr-1 sm:pr-2">
                   {/* Name */}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -270,7 +270,7 @@ const ContactUs: React.FC = () => {
                   </div>
 
                   {/* Email and Phone */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                         Email Address *

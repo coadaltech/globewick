@@ -69,7 +69,7 @@ const StatsSection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-16 bg-gray-50 relative overflow-hidden"
+      className="py-6 sm:py-8 md:py-12 lg:py-16 bg-gray-50 relative overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -95,7 +95,7 @@ const StatsSection: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
           {stats.map((stat, index) => {
             const numericValue = parseInt(stat.value);
             const displayValue = isNaN(numericValue)
@@ -107,14 +107,14 @@ const StatsSection: React.FC = () => {
             return (
               <div
                 key={index}
-                className="text-center transform hover:scale-105 transition-transform duration-300"
+                className="text-center transform hover:scale-105 transition-transform duration-300 px-2 sm:px-0"
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#001f54] mb-3">
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#001f54] mb-1.5 sm:mb-2 md:mb-3 leading-tight">
                   {stat.prefix}
                   {displayValue}
                   {stat.suffix}
                 </div>
-                <div className="text-gray-600 text-sm md:text-base font-medium">
+                <div className="text-gray-600 text-xs sm:text-sm md:text-base font-medium leading-tight px-1">
                   {stat.label}
                 </div>
               </div>

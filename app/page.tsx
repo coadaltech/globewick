@@ -8,7 +8,7 @@ import ServicesSection from '@/components/servicessection';
 import DevelopmentProcess from '@/components/developmentprocess';
 import PortfolioSection from '@/components/portfolio-section';
 import ContactUs from '@/components/contactus';
-import AllServicesSection from '@/components/allservicessection';
+// import AllServicesSection from '@/components/allservicessection';
 // import CTA from '@/components/cta';
 
 export default function Home() {
@@ -17,7 +17,8 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       {/* <Services /> */}
-      <AllServicesSection/>
+      {/* <AllServicesSection/> */}
+      <ServicesSection/>
       <AboutSection />
       {/* <CTA/> */}
       {/* <Process /> */}

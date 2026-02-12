@@ -325,7 +325,7 @@ const Header: React.FC = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`md:hidden focus:outline-none ${
-              isScrolled ? 'text-[#001f54]' : 'text-white'
+              isScrolled ? 'text-[#001f54]' : 'text-[#001f54]'
             }`}
             aria-label="Toggle menu"
           >

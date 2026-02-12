@@ -175,7 +175,7 @@ export default function DevelopmentProcess() {
                       } text-center`}
                       onClick={() => setActiveStep(index)}
                     >
-                      <div className={`group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl p-8 border transition-all duration-500 overflow-hidden ${
+                      <div className={`group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-xl rounded-3xl sm:p-8 p-4 border transition-all duration-500 overflow-hidden ${
                         isActive 
                           ? 'border-[#28a745] shadow-2xl shadow-[#28a745]/30 scale-105' 
                           : 'border-white/10 hover:border-[#28a745]/50'

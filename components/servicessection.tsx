@@ -69,7 +69,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative pb-20 py-46 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#28a745] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
