@@ -355,15 +355,14 @@ const Header: React.FC = () => {
                 item.hasDropdown ? (
                   <div key={item.label} className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <Link
-                        href={item.href}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-[#001f54] font-medium hover:text-[#28a745] transition-colors duration-200 py-2"
-                      >
+                      <span className="text-[#001f54] font-medium py-2">
                         {item.label}
-                      </Link>
+                      </span>
                       <button
-                        onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsServicesDropdownOpen(!isServicesDropdownOpen);
+                        }}
                         className="p-2 text-[#001f54] hover:text-[#28a745] transition-colors duration-200"
                         aria-label="Toggle services dropdown"
                       >
@@ -380,7 +379,7 @@ const Header: React.FC = () => {
                       </button>
                     </div>
                     {isServicesDropdownOpen && (
-                      <div className="pl-4 space-y-3 bg-gray-50 rounded-lg p-4">
+                      <div className="pl-4 bg-gray-50 rounded-lg p-4 max-h-[60vh] overflow-y-auto">
                         {/* View All Services Link */}
                         <Link
                           href="/services"
@@ -396,31 +395,33 @@ const Header: React.FC = () => {
                           </svg>
                         </Link>
                         
-                        {servicesData.map((category, categoryIndex) => (
-                          <div key={categoryIndex} className="space-y-2">
-                            <h4 className="text-[#001f54] font-bold text-sm uppercase tracking-wider">
-                              {category.category}
-                            </h4>
-                            {category.services.map((service, serviceIndex) => (
-                              <Link
-                                key={serviceIndex}
-                                href={service.href}
-                                onClick={() => {
-                                  setIsMobileMenuOpen(false);
-                                  setIsServicesDropdownOpen(false);
-                                }}
-                                className="flex items-center gap-3 p-2 rounded-lg hover:bg-white transition-colors duration-200"
-                              >
-                                <div className={`inline-flex p-2 rounded-lg bg-gradient-to-br ${service.color} text-white shrink-0`}>
-                                  {service.icon}
-                                </div>
-                                <span className="text-[#001f54] font-medium text-sm">
-                                  {service.name}
-                                </span>
-                              </Link>
-                            ))}
-                          </div>
-                        ))}
+                        <div className="space-y-4">
+                          {servicesData.map((category, categoryIndex) => (
+                            <div key={categoryIndex} className="space-y-2">
+                              <h4 className="text-[#001f54] font-bold text-sm uppercase tracking-wider">
+                                {category.category}
+                              </h4>
+                              {category.services.map((service, serviceIndex) => (
+                                <Link
+                                  key={serviceIndex}
+                                  href="/services"
+                                  onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    setIsServicesDropdownOpen(false);
+                                  }}
+                                  className="flex items-center gap-3 p-2 rounded-lg hover:bg-white transition-colors duration-200"
+                                >
+                                  <div className={`inline-flex p-2 rounded-lg bg-gradient-to-br ${service.color} text-white shrink-0`}>
+                                    {service.icon}
+                                  </div>
+                                  <span className="text-[#001f54] font-medium text-sm">
+                                    {service.name}
+                                  </span>
+                                </Link>
+                              ))}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>

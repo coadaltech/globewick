@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
     <section
       id="home"
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-[#001f54] via-[#001f54] to-[#001a47] pt-28 sm:pt-32 md:pt-36 pb-8 sm:pb-0"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-[#001f54] via-[#001f54] to-[#001a47] pt-20 sm:pt-20 pb-8 sm:pb-0"
     >
       {/* Animated Tech Background - Network Lines & Dots */}
       <div className="absolute inset-0 overflow-hidden">
@@ -94,57 +94,62 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Main Content - Centered */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10 w-full">
         <div className="text-center">
           {/* Badge */}
-          <div className="inline-block mb-4 sm:mb-8 animate-on-scroll opacity-0">
-            <span className="bg-[#28a745]/20 text-[#28a745] px-3 py-1.5 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold border border-[#28a745]/30">
-              🚀 Next-Gen Software Development & Digital Solutions
+          <div className="inline-block mb-4 sm:mb-6 md:mb-8 animate-on-scroll opacity-0">
+            <span className="bg-[#28a745]/20 backdrop-blur-sm text-[#28a745] px-3 py-1.5 sm:px-5 sm:py-2 md:px-6 md:py-3 rounded-full text-xs sm:text-sm font-semibold border border-[#28a745]/30 inline-block">
+              ✨ Innovation Driven Technology Solutions
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-8 leading-tight animate-on-scroll opacity-0 px-2 sm:px-0">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight animate-on-scroll opacity-0 px-1">
             <span className="block sm:inline">
-              <span>Build </span>
-              <span className="text-[#28a745]">Scalable</span>
+              <span>Transforming </span>
+              <span className="text-[#28a745]">Technology</span>
             </span>
-            <span className="block sm:inline sm:ml-2">Tech Solutions</span>
+            <span className="block sm:inline sm:ml-2">Solutions</span>
           </h1>
 
-
           {/* Description */}
-          <p className="text-sm sm:text-xl md:text-2xl text-gray-300 mb-4 sm:mb-4 leading-relaxed max-w-3xl mx-auto animate-on-scroll opacity-0 px-2 sm:px-0">
-            We deliver{' '}
-            <span className="text-[#28a745] font-semibold">enterprise-grade software</span>,{' '}
-            <span className="text-[#28a745] font-semibold">cloud-native applications</span>, and{' '}
-            <span className="text-[#28a745] font-semibold">AI-powered solutions</span> that drive digital transformation.
+          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto animate-on-scroll opacity-0 px-2 sm:px-0">
+            We transform your business vision into reality with{' '}
+            <span className="text-[#28a745] font-semibold">cutting-edge technology</span>,{' '}
+            <span className="text-[#28a745] font-semibold">innovative solutions</span>, and{' '}
+            <span className="text-[#28a745] font-semibold">pixel-perfect execution</span>.
             <br className="hidden sm:block" />
-            <span className="block sm:inline">Full-stack development, DevOps, and modern tech stack expertise.</span>
+            <span className="block sm:inline">From web applications to enterprise software solutions.</span>
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center items-center mt-6 sm:mt-12 mb-8 sm:mb-16 animate-on-scroll opacity-0 px-2 sm:px-0">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center mt-8 sm:mt-10 md:mt-12 mb-6 sm:mb-12 md:mb-16 animate-on-scroll opacity-0 px-2 sm:px-0">
             <Link
               href={"/contact"}
-              className="group bg-gradient-to-r from-[#28a745] to-[#218838] text-white px-6 py-3 sm:px-10 sm:py-4 rounded-lg text-sm sm:text-lg font-semibold hover:from-[#218838] hover:to-[#1e7e34] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto"
+              className="group relative w-full sm:w-auto bg-gradient-to-r from-[#28a745] via-[#20c997] to-[#28a745] bg-size-200 bg-pos-0 hover:bg-pos-100 text-white px-6 py-3.5 sm:px-8 sm:py-4 md:px-10 md:py-4 rounded-xl text-sm sm:text-base md:text-lg font-semibold transition-all duration-500 transform hover:scale-105 shadow-lg shadow-[#28a745]/30 hover:shadow-[#28a745]/50 flex items-center justify-center gap-2 overflow-hidden"
             >
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {/* Animated background gradient */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#28a745] via-[#20c997] to-[#28a745] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* Shine effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
-              <span className="whitespace-nowrap">Talk To Consultant</span>
-              <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="whitespace-nowrap relative z-10">Talk To Consultant</span>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <a
               href="#services"
-              className="bg-transparent border-2 border-white/50 text-white px-6 py-3 sm:px-10 sm:py-4 rounded-lg text-sm sm:text-lg font-semibold hover:bg-white hover:text-[#001f54] transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto"
+              className="group relative w-full sm:w-auto bg-white/10 backdrop-blur-md border-2 border-white/30 text-white px-6 py-3.5 sm:px-8 sm:py-4 md:px-10 md:py-4 rounded-xl text-sm sm:text-base md:text-lg font-semibold hover:bg-white/20 hover:border-white/50 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-white/10 hover:shadow-white/20"
             >
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-xl bg-white/0 group-hover:bg-white/10 transition-all duration-300 blur-sm"></div>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 relative z-10" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z" />
               </svg>
-              <span className="whitespace-nowrap">Watch Our Work</span>
+              <span className="whitespace-nowrap relative z-10">Watch Our Work</span>
             </a>
           </div>
 
@@ -153,7 +158,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 sm:bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
         <svg
           className="w-5 h-5 sm:w-6 sm:h-6 text-white"
           fill="none"
