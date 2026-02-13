@@ -99,28 +99,28 @@ const HeroSection: React.FC = () => {
           {/* Badge */}
           <div className="inline-block mb-4 sm:mb-8 animate-on-scroll opacity-0">
             <span className="bg-[#28a745]/20 text-[#28a745] px-3 py-1.5 sm:px-6 sm:py-3 rounded-full text-xs sm:text-sm font-semibold border border-[#28a745]/30">
-              ✨ Innovation Driven Technology Solutions
+              🚀 Next-Gen Software Development & Digital Solutions
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-8 leading-tight animate-on-scroll opacity-0 px-2 sm:px-0">
             <span className="block sm:inline">
-              <span>Transforming </span>
-              <span className="text-[#28a745]">Technology</span>
+              <span>Build </span>
+              <span className="text-[#28a745]">Scalable</span>
             </span>
-            <span className="block sm:inline sm:ml-2">Solutions</span>
+            <span className="block sm:inline sm:ml-2">Tech Solutions</span>
           </h1>
 
 
           {/* Description */}
           <p className="text-sm sm:text-xl md:text-2xl text-gray-300 mb-4 sm:mb-4 leading-relaxed max-w-3xl mx-auto animate-on-scroll opacity-0 px-2 sm:px-0">
-            We transform your business vision into reality with{' '}
-            <span className="text-[#28a745] font-semibold">cutting-edge technology</span>,{' '}
-            <span className="text-[#28a745] font-semibold">innovative solutions</span>, and{' '}
-            <span className="text-[#28a745] font-semibold">pixel-perfect execution</span>.
+            We deliver{' '}
+            <span className="text-[#28a745] font-semibold">enterprise-grade software</span>,{' '}
+            <span className="text-[#28a745] font-semibold">cloud-native applications</span>, and{' '}
+            <span className="text-[#28a745] font-semibold">AI-powered solutions</span> that drive digital transformation.
             <br className="hidden sm:block" />
-            <span className="block sm:inline">From web applications to enterprise software solutions.</span>
+            <span className="block sm:inline">Full-stack development, DevOps, and modern tech stack expertise.</span>
           </p>
 
           {/* CTA Buttons */}

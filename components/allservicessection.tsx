@@ -21,48 +21,32 @@ export default function ServicesSection() {
     {
       icon: <Globe className="w-8 h-8" />,
       title: 'Frontend Development',
-      description: 'Build stunning, responsive web applications with modern frameworks like React, Next.js, and Vue.js.',
-      features: ['React & Next.js', 'Vue.js & Angular', 'Responsive Design', 'Performance Optimization'],
+      description: 'Modern, responsive web applications built with React, Next.js, TypeScript, and cutting-edge UI frameworks. We create pixel-perfect interfaces with optimal performance.',
+      features: ['React & Next.js', 'TypeScript & JavaScript', 'Tailwind CSS & Styled Components', 'Performance & SEO Optimization'],
       color: 'from-[#001f54] to-[#0056b3]',
       href: '/services/frontend-development',
     },
     {
       icon: <Server className="w-8 h-8" />,
       title: 'Backend Development',
-      description: 'Create scalable, secure server-side applications with Node.js, Python, and modern backend frameworks.',
-      features: ['Node.js & Express', 'Python & Django', 'API Development', 'Database Design'],
+      description: 'Scalable, secure APIs and microservices using Node.js, Python, Go, and cloud-native architectures. Enterprise-grade backend solutions with high availability.',
+      features: ['REST & GraphQL APIs', 'Microservices Architecture', 'Database Design & Optimization', 'Cloud Deployment'],
       color: 'from-[#28a745] to-[#218838]',
       href: '/services/backend-development',
     },
     {
-      icon: <Share2 className="w-8 h-8" />,
-      title: 'Social Media Marketing',
-      description: 'Grow your brand on social media with strategic content, advertising, and community management.',
-      features: ['Content Creation', 'Social Advertising', 'Community Management', 'Analytics & Reporting'],
-      color: 'from-[#001f54] to-[#003a8c]',
-      href: '/services/social-media-marketing',
-    },
-    {
       icon: <Layers className="w-8 h-8" />,
       title: 'Full Stack Development',
-      description: 'End-to-end web application development with seamless frontend and backend integration.',
-      features: ['MERN Stack', 'MEAN Stack', 'Next.js Full Stack', 'Complete Solutions'],
+      description: 'End-to-end application development from concept to deployment. Complete software solutions with modern tech stacks and DevOps integration.',
+      features: ['MERN & MEAN Stack', 'Next.js Full Stack', 'Serverless Architecture', 'CI/CD Pipeline Setup'],
       color: 'from-[#001f54] to-[#003a8c]',
       href: '/services/fullstack-development',
     },
     {
-      icon: <Search className="w-8 h-8" />,
-      title: 'SEO Services',
-      description: 'Improve your search engine rankings with proven SEO strategies and optimization techniques.',
-      features: ['On-Page SEO', 'Off-Page SEO', 'Technical SEO', 'Local SEO'],
-      color: 'from-[#28a745] to-[#218838]',
-      href: '/services/seo-services',
-    },
-    {
       icon: <ShoppingCart className="w-8 h-8" />,
       title: 'E-commerce Development',
-      description: 'Build powerful online stores with payment integration, inventory management, and advanced features.',
-      features: ['Shopify & WooCommerce', 'Custom Solutions', 'Payment Integration', 'Mobile Commerce'],
+      description: 'Enterprise e-commerce platforms with advanced features, payment gateways, inventory management, and multi-vendor capabilities.',
+      features: ['Custom E-commerce Solutions', 'Payment Gateway Integration', 'Inventory & Order Management', 'Mobile Commerce Apps'],
       color: 'from-[#28a745] to-[#20c997]',
       href: '/services/e-commerce-development',
     },
@@ -70,27 +54,41 @@ export default function ServicesSection() {
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: 'iOS Development',
-      description: 'Native iOS app development using Swift and SwiftUI for iPhone and iPad.',
-      features: ['Swift & SwiftUI', 'App Store Publishing', 'Native Performance', 'UI/UX Design'],
+      description: 'Native iOS applications using Swift, SwiftUI, and iOS SDK. High-performance apps with modern design patterns and App Store optimization.',
+      features: ['Swift & SwiftUI', 'Core Data & CloudKit', 'App Store Optimization', 'Push Notifications & Analytics'],
       color: 'from-[#001f54] to-[#002d72]',
       href: '/services/ios-development',
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: 'Android Development',
-      description: 'Native Android app development using Kotlin and Jetpack Compose.',
-      features: ['Kotlin & Jetpack', 'Play Store Publishing', 'Material Design', 'Firebase Integration'],
+      description: 'Native Android apps with Kotlin, Jetpack Compose, and Material Design. Scalable mobile solutions with offline capabilities.',
+      features: ['Kotlin & Jetpack Compose', 'Material Design 3', 'Firebase Integration', 'Google Play Optimization'],
       color: 'from-[#28a745] to-[#1e7e34]',
       href: '/services/android-development',
     },
-    // MARKETING SERVICES
-    
-   
+    // DIGITAL SERVICES
+    {
+      icon: <Search className="w-8 h-8" />,
+      title: 'SEO & Digital Marketing',
+      description: 'Data-driven SEO strategies and digital marketing campaigns to increase visibility, traffic, and conversions for your business.',
+      features: ['Technical SEO Audit', 'Content Strategy & Optimization', 'Link Building & Outreach', 'Analytics & Reporting'],
+      color: 'from-[#28a745] to-[#218838]',
+      href: '/services/seo-services',
+    },
+    {
+      icon: <Share2 className="w-8 h-8" />,
+      title: 'Social Media Marketing',
+      description: 'Strategic social media management and advertising campaigns to build brand awareness and engage your target audience effectively.',
+      features: ['Content Strategy & Creation', 'Social Media Advertising', 'Community Management', 'Performance Analytics'],
+      color: 'from-[#001f54] to-[#003a8c]',
+      href: '/services/social-media-marketing',
+    },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: 'E-commerce Growth',
-      description: 'Accelerate your online store growth with conversion optimization and marketing strategies.',
-      features: ['Conversion Optimization', 'Email Marketing', 'Paid Advertising', 'Customer Retention'],
+      description: 'Conversion optimization, marketing automation, and growth strategies to scale your online business and maximize revenue.',
+      features: ['Conversion Rate Optimization', 'Email Marketing Automation', 'PPC & Paid Advertising', 'Customer Retention Strategies'],
       color: 'from-[#001f54] to-[#0056b3]',
       href: '/services/e-commerce-growth',
     },
@@ -111,7 +109,7 @@ export default function ServicesSection() {
             Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive technology solutions tailored to your business needs
+            Enterprise software development, cloud solutions, and digital transformation services
           </p>
         </div>
 

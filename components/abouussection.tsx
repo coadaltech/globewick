@@ -28,20 +28,20 @@ const AboutSection: React.FC = () => {
 
   const values = [
     {
-      title: 'Innovation',
-      description: 'We stay ahead of technology trends to deliver cutting-edge solutions.',
+      title: 'Technical Excellence',
+      description: 'We maintain the highest standards in code quality, architecture design, and engineering practices. Every solution is built for scalability and maintainability.',
     },
     {
-      title: 'Excellence',
-      description: 'Quality is at the core of everything we do, ensuring exceptional results.',
+      title: 'Agile Development',
+      description: 'Following agile methodologies and DevOps best practices, we deliver iterative, high-quality software with continuous integration and deployment.',
     },
     {
-      title: 'Collaboration',
-      description: 'We work closely with clients to understand and exceed their expectations.',
+      title: 'Cloud-First Approach',
+      description: 'We design and build cloud-native applications leveraging AWS, Azure, and GCP to ensure scalability, reliability, and cost-efficiency.',
     },
     {
-      title: 'Integrity',
-      description: 'Transparent communication and ethical practices guide our operations.',
+      title: 'Security & Compliance',
+      description: 'Security is built into every layer of our solutions. We follow industry standards and best practices for data protection and compliance.',
     },
   ];
 
@@ -59,19 +59,20 @@ const AboutSection: React.FC = () => {
               About GLOBEWICK
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              GLOBEWICK is a leading technology solutions provider with over a decade of
-              experience in delivering innovative software solutions. We specialize in
-              transforming businesses through cutting-edge technology, helping them stay
-              competitive in the digital landscape.
+              GLOBEWICK is a premier software development and technology consulting company 
+              specializing in enterprise-grade solutions, cloud-native applications, and 
+              AI-powered systems. With expertise across the full technology stack, we help 
+              businesses accelerate their digital transformation journey.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our team of expert developers, designers, and strategists work collaboratively
-              to create solutions that not only meet but exceed client expectations. We
-              believe in building long-term partnerships and delivering value that drives
-              measurable business outcomes.
+              Our team of senior engineers, architects, and DevOps specialists leverages 
+              modern frameworks, microservices architecture, and cloud platforms to build 
+              scalable, secure, and high-performance applications. We follow agile methodologies, 
+              implement CI/CD pipelines, and ensure code quality through comprehensive testing 
+              and code reviews.
             </p>
             <div className="flex flex-wrap gap-4">
-              {['Web Development', 'Mobile Apps', 'Cloud Services', 'AI/ML'].map((tech, index) => (
+              {['Full Stack Development', 'Cloud & DevOps', 'AI/ML Solutions', 'Microservices', 'API Development', 'Mobile Apps'].map((tech, index) => (
                 <span
                   key={index}
                   className="bg-[#001f54]/10 text-[#001f54] px-4 py-2 rounded-full text-sm font-medium"

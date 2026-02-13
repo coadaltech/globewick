@@ -15,10 +15,10 @@ const StatsSection: React.FC = () => {
   const hasAnimated = useRef(false);
 
   const stats: StatItem[] = [
-    { value: '500', label: 'Clients Worldwide', suffix: '+' },
-    { value: '98', label: 'Success Rate', suffix: '%' },
+    { value: '500', label: 'Projects Delivered', suffix: '+' },
+    { value: '99', label: 'Uptime SLA', suffix: '%' },
     { value: '24', label: 'Support Available', suffix: '/7', prefix: '' },
-    { value: '15', label: 'Years Experience', suffix: '+' },
+    { value: '8', label: 'Years in Tech', suffix: '+' },
   ];
 
   useEffect(() => {
